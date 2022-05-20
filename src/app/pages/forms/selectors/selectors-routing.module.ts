@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SelectorComponent } from './selector/selector.component';
+import { SelectorsComponent } from './selectors.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: SelectorComponent
-  },
-  {
-    path: '**',
-    redirectTo: ''
+    component: SelectorsComponent
   }
 ];
 
