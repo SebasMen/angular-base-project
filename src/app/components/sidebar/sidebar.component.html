@@ -1,0 +1,12 @@
+<h2>Logins</h2>
+<hr>
+
+<ul class="list-group">
+  <li *ngFor="let item of templateMenu"
+      [routerLink]=[item.path]
+      class="list-group-item" 
+      routerLinkActive="active"
+      >
+    {{ item.text }}
+  </li>
+</ul>
