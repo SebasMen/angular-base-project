@@ -11,6 +11,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/forms/forms.module').then(m => m.FormsModule)
   },
   {
+    path: 'graphics',
+    loadChildren: () => import('./pages/graphics/graphics.module').then(m => m.GraphicsModule)
+  },
+  {
+    path: 'directives',
+    loadChildren: () => import('./pages/directives/directives.module').then(m => m.DirectivesModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

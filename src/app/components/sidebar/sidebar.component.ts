@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 interface MenuItem {
   text: string;
@@ -12,16 +12,19 @@ interface MenuItem {
 })
 export class SidebarComponent implements OnInit {
 
-  templateMenu: MenuItem [] = [
-    {
-      text: 'Login 1',
-      path: './login1'
-    },
-    {
-      text: 'Login 2',
-      path: './login2'
-    }
-  ]
+  @Input() title: string = 'Sidebar';
+  @Input() menu: MenuItem[] = [];
+
+  // templateMenu: MenuItem [] = [
+  //   {
+  //     text: 'Login 1',
+  //     path: './login1'
+  //   },
+  //   {
+  //     text: 'Login 2',
+  //     path: './login2'
+  //   }
+  // ]
 
   constructor() { }
 

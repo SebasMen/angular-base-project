@@ -1,5 +1,5 @@
 <nav>
-  <div class="logo">Proyecto Angular</div>
+  <div class="logo">Angular Project</div>
   <label for="btn" class="icono">
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -10,10 +10,10 @@
   </label>
   <input type="checkbox" id="btn">
   <ul>
-    <li><a routerLink="/">Inicio</a></li>
+    <li><a routerLink="/">Home</a></li>
     <li>
-      <label for="btn-1" class="show">Formularios +</label>
-      <a href="#">Formularios 
+      <label for="btn-1" class="show">Forms +</label>
+      <a >Formularios
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
@@ -22,14 +22,14 @@
       <input type="checkbox" id="btn-1">
       <ul>
         <li><a [routerLink]="['/forms/logins']">Logins</a></li>
-        <li><a href="#">Buscadores</a></li>
+        <li><a href="#">Seeker</a></li>
         <li><a [routerLink]="['/forms/selectors']">Selectores</a></li>
       </ul>
     </li>
     <li>
-      <a href="#">Mapas</a>
+      <a href="#">Maps</a>
     </li>
-    <li><a href="#">Gráficas</a></li>
-    <li><a href="#">Directivas</a></li>
+    <li><a [routerLink]="['/graphics']">Graphics</a></li>
+    <li><a [routerLink]="['/directives']">Directives</a></li>
   </ul>
 </nav>
