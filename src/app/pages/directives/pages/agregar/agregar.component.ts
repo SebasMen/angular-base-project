@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AgregarComponent implements OnInit {
 
-  text: string = 'Sebastian Meneses';
+  text: string = 'This field is required';
   color: string = 'red';
 
   form: FormGroup = this.fb.group({
@@ -25,7 +25,7 @@ export class AgregarComponent implements OnInit {
   }
 
   changeName() {
-    this.text = 'Cambio de nombre';
+    this.text = Math.random().toString();
   }
 
   changeColor() {

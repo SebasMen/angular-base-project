@@ -7,12 +7,14 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
 import { MenuModule } from 'src/app/components/menu/menu.module';
 
 import { ErrorMsgDirective } from './directive/error-msg.directive';
+import { CustomIfDirective } from './directive/custom-if.directive';
 
 
 @NgModule({
   declarations: [
     AgregarComponent,
-    ErrorMsgDirective
+    ErrorMsgDirective,
+    CustomIfDirective
   ],
   imports: [
     CommonModule,
