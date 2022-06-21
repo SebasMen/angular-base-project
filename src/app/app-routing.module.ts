@@ -1,26 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ValidTokenGuard } from './guards/valid-token.guard';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: 'forms',
-    loadChildren: () => import('./pages/forms/forms.module').then(m => m.FormsModule)
-  },
-  {
-    path: 'graphics',
-    loadChildren: () => import('./pages/graphics/graphics.module').then(m => m.GraphicsModule)
-  },
-  {
-    path: 'directives',
-    loadChildren: () => import('./pages/directives/directives.module').then(m => m.DirectivesModule)
+    path: 'pages',
+    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
+    canActivate: [ValidTokenGuard],
+    canLoad: [ValidTokenGuard]
   },
   {
     path: '**',
-    redirectTo: ''
+    redirectTo: 'auth'
   }
 ];
 

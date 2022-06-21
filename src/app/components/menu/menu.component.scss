@@ -11,7 +11,7 @@ body {
 nav::after {
   content: '';
   clear: both;
-  display: table; 
+  display: table;
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
     position: relative;
 
     li {
-      display: inline-block;      
+      display: inline-block;
       margin: 0 5px;
 
       &:hover > ul {
@@ -58,7 +58,7 @@ nav {
         font-size: 18px;
         padding: 8px 15px;
 
-        &:hover {           
+        &:hover {
           border-radius: 5px;
           box-shadow: 0 0 5px #fff,
                       0 0 5px #f1f1f1
@@ -67,6 +67,20 @@ nav {
 
       input {
         display: none;
+      }
+
+      .btn-logout {
+        color: #F1524F;
+        font-size: 18px;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+          border-radius: 5px;
+          box-shadow: 0 0 5px #fff,
+                      0 0 5px #f1f1f1
+        }
       }
     }
 
@@ -85,7 +99,7 @@ nav {
         display: list-item;
         background: rgba(28,28,28,1);
         border-bottom: 1px solid rgb(0,0,0,0.3);
-        
+
         a {
           font-size: 16px;
           line-height: 50px;
@@ -113,7 +127,7 @@ nav {
     .logo {
       padding-left: 30px;
       width: 100%;
-    }    
+    }
 
     .icono {
       display: block;
@@ -142,7 +156,7 @@ nav {
 
           &:hover {
             text-decoration: underline;
-          }                             
+          }
         }
 
         a:hover {

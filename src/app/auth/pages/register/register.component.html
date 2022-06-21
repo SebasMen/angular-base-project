@@ -1,0 +1,46 @@
+<main>
+  <form [formGroup]="form" (ngSubmit)="register()" class="form mb-5">
+    <h2 class="form__title">Sign up</h2>
+    <p class="form_paragraph">
+      Log In
+      <a routerLink="/auth/login" class="form__link">Click here</a>
+    </p>
+
+    <div class="form__container">
+      <div class="form__group">
+        <input type="text"
+               id="text"
+               class="form__input"
+               formControlName="name"
+               placeholder=" ">
+        <label for="text" class="form__label">Name:</label>
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group">
+        <input type="email"
+               id="user"
+               class="form__input"
+               formControlName="email"
+               placeholder=" ">
+        <label for="user" class="form__label">Email:</label>
+        <span class="form__line"></span>
+      </div>
+
+      <div class="form__group">
+        <input type="password"
+               id="password"
+               class="form__input"
+               formControlName="password"
+               placeholder=" ">
+        <label for="password" class="form__label">Password:</label>
+        <span class="form__line"></span>
+      </div>
+
+
+      <button type="submit"
+              class="btn btn-primary"
+              [disabled]="form.invalid">Create</button>
+    </div>
+  </form>
+</main>
