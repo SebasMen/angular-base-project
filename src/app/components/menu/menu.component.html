@@ -10,7 +10,7 @@
   </label>
   <input type="checkbox" id="btn">
   <ul>
-    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/pages/home">Home</a></li>
     <li>
       <label for="btn-1" class="show">Forms +</label>
       <a >Formularios
@@ -21,18 +21,18 @@
       </a>
       <input type="checkbox" id="btn-1">
       <ul>
-        <li><a [routerLink]="['/forms/logins']">Logins</a></li>
-        <li><a href="#">Seeker</a></li>
-        <li><a [routerLink]="['/forms/selectors']">Selectores</a></li>
+        <li><a routerLink="/pages/forms/logins">Logins</a></li>
+        <li><a routerLink="/pages/forms/selectors">Selectores</a></li>
       </ul>
     </li>
-    <li>
+    <!-- <li>
       <a href="#">Maps</a>
-    </li>
-    <li><a [routerLink]="['/graphics']">Graphics</a></li>
-    <li><a [routerLink]="['/directives']">Directives</a></li>
+    </li> -->
+    <li><a routerLink="/pages/graphics">Graphics</a></li>
+    <li><a routerLink="/pages/directives">Directives</a></li>
     <li>
-      <button class="btn-logout">Logout</button>
+      <button class="btn-logout" (click)="logout()">Logout</button>
     </li>
+    <li><p>{{ user.name }}</p></li>
   </ul>
 </nav>

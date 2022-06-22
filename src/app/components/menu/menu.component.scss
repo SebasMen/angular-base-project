@@ -34,7 +34,7 @@ nav {
   ul {
     float: right;
     list-style: none;
-    margin-right: 40px;
+    // margin-right: 40px;
     position: relative;
 
     li {
@@ -65,12 +65,17 @@ nav {
         }
       }
 
+      p {
+        color: white;
+      }
+
       input {
         display: none;
       }
 
       .btn-logout {
         color: #F1524F;
+        background-color: white;
         font-size: 18px;
         padding: 8px 15px;
         border: none;
